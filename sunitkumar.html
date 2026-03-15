@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>राधे राधे हेयर सैलून</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="title">राधे राधे हेयर सैलून</div>
+
+  <div class="feather-container">
+    <img class="feather" src="images/peacock.png" alt="Peacock Feather">
+    <img class="krishna" src="images/krishna.jpg" alt="Krishna">
+    <img class="radha" src="images/radha.jpg" alt="Radha">
+  </div>
+</div>
+
+<script>
+// Owner check
+let role = prompt("Enter secret key (leave blank if you are a user)");
+
+if(role === "owner123"){  // yeh secret key hai, tum change kar sakte ho
+  // Show booking log
+  let log = localStorage.getItem("bookings");
+  if(!log) log = "No bookings yet!";
+  document.body.innerHTML += `<h2>Booking Log</h2><pre>${log}</pre>`;
+} else {
+  // Normal user → show book button
+  document.body.innerHTML += `<a href="book.html"><button>Book Your Seat</button></a>`;
+}
+</script>
+
+</body>
+</html>
