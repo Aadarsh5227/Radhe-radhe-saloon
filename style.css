@@ -2,13 +2,13 @@ body{
   font-family: Arial, sans-serif;
   text-align:center;
   margin:0;
+  padding:20px;
   background:#f4f4f4;
 }
 
 .header{
   text-align:center;
-  position:relative;
-  padding:20px;
+  margin-bottom:50px;
 }
 
 .title{
@@ -18,35 +18,8 @@ body{
   margin-bottom:20px;
 }
 
-.feather-container{
-  position:relative;
-  display:inline-block;
-}
-
-.feather{
-  width:300px;
-  height:auto;
-}
-
-.krishna, .radha{
-  position:absolute;
-  top:50px; /* pankh ke andar vertical position */
-  width:60px;
-  height:60px;
-  border-radius:50%;
-}
-
-.krishna{
-  left:50px; /* pankh ke left side */
-}
-
-.radha{
-  right:50px; /* pankh ke right side */
-}
-
 button{
   padding:15px 30px;
   font-size:18px;
-  margin-top:40px;
   cursor:pointer;
 }
